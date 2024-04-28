@@ -1,5 +1,5 @@
 
 
 .json
-.src/config.json
-
+./src/config.json
+config.json
