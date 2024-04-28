@@ -23,6 +23,12 @@ client.once(Events.ClientReady, readyClient => {
     console.log(`${readyClient.user.tag} has arose from the ashes!`);
 });
 
+client.on('interactionCreate', (interaction) => {
+    if (interaction.isChatInputCommand()) {
+        console.log("heyfang");
+        interaction.reply('wotamelon!');
+    }
+});
 
 // Prints out the message content to the console
 /*
@@ -41,10 +47,6 @@ async function main (){
         {
             name: 'ping',
             description: 'Replies with Pong!',
-        },
-        {
-            name: 'feng',
-            description: 'a watermelon.',
         },
     ];
     try{
